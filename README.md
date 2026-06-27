@@ -105,12 +105,12 @@ ckpt = torch.load("pretrained_models/sigma_vae_full/final_model.pth",
 
 > Weights are ~15 MB each. For GitHub, track `*.pth` with **Git LFS**, or attach them
 > to a GitHub Release / Zenodo (a DOI is convenient to cite in the paper).
-# Interpretation — Fig. 3 (perturbation analysis)
+## Interpretation — Fig. 3 (perturbation analysis)
 
 Fig. 3 is produced in two stages: **generate** perturbation maps from a trained model,
 then **render** them on the brain. Run from inside this folder.
 
-## 1. Generate — `perturbation_analysis.py`
+### 1. Generate — `perturbation_analysis.py`
 Loads a checkpoint, perturbs each active latent dimension by ±SD, decodes through every
 view's decoder, and writes one CSV per modality
 (`perturbation_subcortical_*.csv`, `perturbation_cortical_*.csv`, `perturbation_surface_*.csv`).
@@ -127,7 +127,7 @@ view's decoder, and writes one CSV per modality
 python perturbation_analysis.py
 ```
 
-## 2. Render
+### 2. Render
 - **`render_subcortical.py`** — maps the subcortical (aseg) perturbation CSV onto MNI
   slices. This is the panel **shown** in the paper.
 - **`render_cortical_surface.py`** — maps the cortical thickness / surface-area
