@@ -19,7 +19,7 @@ Computes:
 # %%
 import os
 import sys
-os.chdir('/project/4180000.51/DMVAEX/')
+
 sys.path.append('./code/') 
 # =============================================================================
 # CONFIG - UPDATE THESE PATHS
