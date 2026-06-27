@@ -19,7 +19,7 @@ Requires: nilearn, matplotlib
 """
 import os
 import sys
-os.chdir('/project/4180000.51/DMVAEX/')
+
 sys.path.append('./code/') 
 #%%
 import os
