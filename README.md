@@ -29,7 +29,7 @@ interpretation/       # Fig. 3 perturbation / brain-rendering scripts (see note 
 ## Installation
 
 ```bash
-git clone https://github.com/<you>/sigma-vae.git
+git clone https://github.com/mariam186/sigma-vae.git
 cd sigma-vae
 pip install -r requirements.txt
 ```
@@ -118,24 +118,8 @@ load the released `ConditionalMMVAE` checkpoints requires pointing them at
 ## Notes on data sharing
 
 The example CSVs are synthetic. The released artifacts contain no subject-level data
-(`pretrained_models/` holds only weights, configs, and aggregate metrics). If you export
-latents/W-scores for your own subjects, confirm your data-use agreements before sharing
-files that include `subject_id` or `diagnosis`.
+(`pretrained_models/` holds only weights, configs, and aggregate metrics). 
 
-## Citation
 
-```bibtex
-@inproceedings{zabihi2026sigmavae,
-  title     = {SIGMA-VAE: Sketched Isotropic Gaussian Multi-View Autoencoder for Normative Modeling},
-  author    = {Zabihi, Mariam and Dai, Sicheng and Schmidt, Andre and Preller, Katrin and
-               Watrous, Andrew and Bornemann, Klaus and Cole, James and Marquand, Andre and
-               Yang, Yanwu and Wolfers, Thomas},
-  booktitle = {MICCAI},
-  year      = {2026}
-}
-```
 
-## License
 
-Add a `LICENSE` file before publishing (MIT is common for method code). Note that the
-public datasets used in the paper carry their own data-use agreements.
